@@ -318,8 +318,10 @@ void loop() {
     }
 
     // store previous error
-    eprev[i] = e;
-    earmprev[i] = e;
+    if(i<4){
+      eprev[i] = e;
+    {
+    else{earmprev[i] = e;}
 
     // signal the motor
     if (i == 0) ;//setMotor0(calculated_dir, calculated_pwr, i);
